@@ -24,11 +24,11 @@
                 <p>Register a new membership</p>
             </div>
             <div class="input-box">
-                <input type="text"  placeholder="Username" name="users_name" id="users_name">
+                <input type="text" autocomplete="off"  placeholder="Username" name="users_name" id="users_name">
                 <i class='bx bxs-user'></i>
             </div>
             <div class="input-box">
-                <input type="email" placeholder="Email"  name="users_email" id="users_email">
+                <input type="email" autocomplete="off" placeholder="Email"  name="users_email" id="users_email">
                 <i class='bx bxs-user'></i>
             </div>
             <div class="input-box">
