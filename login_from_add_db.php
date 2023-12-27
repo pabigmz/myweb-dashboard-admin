@@ -26,7 +26,11 @@ else{
     if($result['user_type']==1){
         echo '<script>alert("เข้าสู่ระบบสำเร็จ")
         window.location="index_admin.php";</script>'; 
-    }else{
+    }elseif($result['user_type']==0){
+        echo '<script>alert("ยินดีต้อนรับ user")
+        window.location="index_admin.php";</script>'; 
+    }
+    else{
         echo "<script>alert('อีเมลล์หรือรหัสผ่านไม่ถูกต้อง')
         window.location='login_form_add.php';</script>";
         

@@ -159,11 +159,7 @@
   </div>
   
 
-  <!-- <script>
-      document.getElementById('edit').value = '<?php $users_id ?>';
-  </script>
-   -->
-  
+
 
   </body>
   </html>

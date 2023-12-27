@@ -22,7 +22,7 @@ include("connect/connect.php");
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password"name="ad_password" required>
+                    <input type="password" name="ad_password" required>
                     <label for="password">Password</label>
                 </div>
                 <div class="remember-forgot">
@@ -31,7 +31,7 @@ include("connect/connect.php");
                 </div>
                 <button type="submit">Login</button>
                 <div class="register-link">
-                    <p>Don't have an account? <a href="registerpage.php">Register</a></p>
+                    <p>Don't have an account? <a href="register_form_add.php">Register</a></p>
                 </div>
             </form>
         </div>
