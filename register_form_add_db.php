@@ -28,7 +28,7 @@ else{
         mysqli_close($conn);
 
         if($query){
-            die(header('Location: loginpage.php'));
+            die(header('Location: login_form_add.php'));
         }else{
             die(header('Location: registerpage.php'));
         }
@@ -36,7 +36,7 @@ else{
     else{
         echo "<script>";
         echo "alert('กรุณากรอกข้อมูลให้ครบถ้วน')";
-        echo "window.location='register_form_add.php'";
+        echo "window.location='registerpage.php'";
         echo "</script>";
     }
 

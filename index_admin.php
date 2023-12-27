@@ -27,10 +27,7 @@ include("header.php");
         <a href="#" class="nav-link">Contact</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="register_from_add.php" class="nav-link">Add User</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="login_from_add.php" class="nav-link">Logout</a>
+        <a href="login_form_add.php" class="nav-link">Logout</a>
       </li>
     </ul>
 

@@ -45,7 +45,7 @@
             <button type="submit" class="btn">Register</button>
 
             <div class="register-link">
-                <p><a href="login_from_add.php" class="text-center">I already have a membership</a></p>
+                <p><a href="login_form_add.php" class="text-center">I already have a membership</a></p>
             </div>
         </form>
     </div>
