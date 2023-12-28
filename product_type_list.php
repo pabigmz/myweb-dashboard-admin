@@ -43,15 +43,15 @@
                     $x = 0;
                     $sql = "SELECT * from product_type";
                     $query = mysqli_query($conn,$sql); ?>
-                        <a href="product_type.php?mode=add_product" class="btn btn-primary" role="button">Add Product</a> 
+                        <a href="product_type.php?mode=add_product" class="btn btn-primary" role="button">เพิ่มหมวดหมู่สินค้า</a> 
                         <table id="example1" class="table table-bordered table-striped">
                             <thead>
                                 <tr>
-                                    <th>No.</th>
-                                    <th>ID</th>
-                                    <th>Productname</th>
-                                    <th>Edit</th>
-                                    <th>Delete</th>
+                                    <th>ลำดับ</th>
+                                    <th>รหัสประเภทสินค้า</th>
+                                    <th>ประเภทสินค้า</th>
+                                    <th>แก้ไข</th>
+                                    <th>ลบ</th>
                                 </tr>
                             </thead>
                         <?php
@@ -64,11 +64,11 @@
                     echo "          <td>".$row['product_type_id']."</td>";
                     echo "          <td>".$row['product_type_name']."</td>";
                     echo "          <td>"; 
-                    echo '              <a href="product_type.php?mode=edit_product&id='.$row['product_type_id'].'" class="btn btn-warning" role="button">EDIT</a>';?>
+                    echo '              <a href="product_type.php?mode=edit_product&id='.$row['product_type_id'].'" class="btn btn-warning" role="button">แก้ไข</a>';?>
                                     </td>
                                     <td>
                                     <?php
-                                        echo  "<a href='product_type_form_del.php?id=$row[product_type_id]' class='btn btn-danger' role='button' onclick=\"return confirm('คุณต้องการลบใช่หรือไม่')\">DELETE</a>";?>
+                                        echo  "<a href='product_type_form_del.php?id=$row[product_type_id]' class='btn btn-danger' role='button' onclick=\"return confirm('คุณต้องการลบใช่หรือไม่')\">ลบ</a>";?>
                                     </td>
                                 </tr><?php } ?>
                             </tbody>

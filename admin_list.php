@@ -68,17 +68,17 @@
               $x = 0;
               $sql = "SELECT * from users Where user_type = 0";
               $query = mysqli_query($conn,$sql); 
-              echo ' <a href="index_admin.php?mode=add" class="btn btn-primary" role="button">Add User</a>  ';
+              echo ' <a href="index_admin.php?mode=add" class="btn btn-primary" role="button">เพิ่มผู้ใช้งาน</a>  ';
          echo '<table id="example1" class="table table-bordered table-striped">';
          echo     "     <thead>";
          echo     "     <tr>";
-         echo     "       <th>No.</th>";
-         echo     "       <th>ID</th>";
-         echo     "       <th>Username</th>";
-         echo     "       <th>Email</th>";
-         echo     "       <th>Password</th>";
-         echo     "       <th>Edit</th>";
-         echo     "       <th>Delete</th>";
+         echo     "       <th>ลำดับ</th>";
+         echo     "       <th>รหัส</th>";
+         echo     "       <th>ชื่อ</th>";
+         echo     "       <th>อีเมลล์</th>";
+         echo     "       <th>รหัสผ่าน</th>";
+         echo     "       <th>แก้ไข</th>";
+         echo     "       <th>ลบ</th>";
          echo     "     </tr>";
          echo     "     </thead>";
                 
@@ -93,11 +93,11 @@
             echo "           <td>".$row['user_email']."</td>";
             echo "           <td>".$row['user_pass']."</td>";
             echo "           <td>"; 
-            echo ' <a href="index_admin.php?mode=edit&id='.$row['user_id'].'" class="btn btn-warning" role="button">EDIT</a>';?>
+            echo ' <a href="index_admin.php?mode=edit&id='.$row['user_id'].'" class="btn btn-warning" role="button">แก้ไข</a>';?>
                              </td>
                              <td>
                               <?php
-              echo  "<a href='admin_form_del_db.php?mode=del&id=$row[user_id]' class='btn btn-danger' role='button' onclick=\"return confirm('คุณต้องการลบใช่หรือไม่')\">DELETE</a>";?>
+              echo  "<a href='admin_form_del_db.php?mode=del&id=$row[user_id]' class='btn btn-danger' role='button' onclick=\"return confirm('คุณต้องการลบใช่หรือไม่')\">ลบ</a>";?>
               
                                 <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal1">DELETE</button> -->
                            </td>

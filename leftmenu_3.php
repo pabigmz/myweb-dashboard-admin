@@ -47,19 +47,19 @@
               <li class="nav-item">
                 <a href="index_admin.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Manage System User</p>
+                  <p>จัดการผู้ใช้งาน</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="product_type.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Product Categories</p>
+                  <p>จัดการหมวดหมู่สินค้า</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="product.php" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Product</p>
+                  <p>จัดการสินค้า</p>
                 </a>
               </li>
             </ul>

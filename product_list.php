@@ -45,12 +45,12 @@
                     INNER JOIN product_type ON 
                     product.product_type_id = product_type.product_type_id; ";
                     $query = mysqli_query($conn,$sql); ?>
-                        <a href="product.php?mode=add_product" class="btn btn-primary" role="button">Add Product</a> 
+                        <a href="product.php?mode=add_product" class="btn btn-primary" role="button">เพิ่มสินค้า</a> 
                         <table id="example1" class="table table-bordered table-striped">
                             <thead>
                                 <tr>
-                                    <th>No.</th>
-                                    <th>ID</th>
+                                    <th>ลำกับ</th>
+                                    <th>รหัสสินค้า</th>
                                     <th>ประเภทสินค้า</th>
                                     <th>ชื่อสินค้า</th>
                                     <th>ราคาทุน</th>
@@ -78,11 +78,11 @@
                     // echo "          <td>".$row['product_image']."</td>";
                     echo "          <td><img src='image/".$row['product_image']."' width='50px' height='50px'></td>";
                     echo "          <td>"; 
-                    echo '              <a href="product.php?mode=edit_product&id='.$row['product_id'].'" class="btn btn-warning" role="button">EDIT</a>';?>
+                    echo '              <a href="product.php?mode=edit_product&id='.$row['product_id'].'" class="btn btn-warning" role="button">แก้ไข</a>';?>
                                     </td>
                                     <td>
                                     <?php
-                                        echo  "<a href='product_form_del.php?id=$row[product_id]' class='btn btn-danger' role='button' onclick=\"return confirm('คุณต้องการลบใช่หรือไม่')\">DELETE</a>";?>
+                                        echo  "<a href='product_form_del.php?id=$row[product_id]' class='btn btn-danger' role='button' onclick=\"return confirm('คุณต้องการลบใช่หรือไม่')\">ลบ</a>";?>
                                     </td>
                                 </tr><?php } ?>
                             </tbody>
