@@ -6,6 +6,7 @@ $product_name = $_REQUEST['product_name'];
 $product_cost = $_REQUEST['product_cost'];
 $product_price = $_REQUEST['product_price'];
 $product_amount = $_REQUEST['product_amount'];
+echo $product_image_delete = $_REQUEST['product_image_delete'];
 
 $product_type_id = $_REQUEST['product_type_id'];
 
@@ -17,6 +18,7 @@ $product_image_update = $_FILES['product_image'];
 if($product_image_update != ""){
     // print_r($_POST);
     $path = "image/";
+    unlink($path.$product_image_delete);
     date_default_timezone_set('Asia/Bangkok');
     $date1 = date("Ymd_His");
     $randnum = (mt_rand());

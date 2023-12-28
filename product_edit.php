@@ -13,6 +13,7 @@ $product_name = $row['product_name'];
 $product_cost = $row['product_cost'];
 $product_price = $row['product_price'];
 $product_amount = $row['product_amount'];
+$product_image = $row['product_image'];
 
 
 
@@ -91,6 +92,7 @@ Content Wrapper. Contains page content -->
                   <div class="form-group">
                         <label for="exampleInputEmail1">รูปภาพ (ขนาด 50 x 50)</label>
                         <input type="file" name="product_image" id="product_image" class="form-control">
+                        <input type="hidden" name="product_image_delete" id="product_image_delete" value="<?php echo $product_image ?>">
                   </div>
 
 
