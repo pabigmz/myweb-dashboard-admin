@@ -51,13 +51,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="product_type.php" class="nav-link active">
+                <a href="product_type.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Product Categories</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="product.php" class="nav-link">
+                <a href="product.php" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Product</p>
                 </a>
