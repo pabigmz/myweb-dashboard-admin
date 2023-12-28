@@ -161,7 +161,7 @@ include("header.php");
 if(isset($_REQUEST['mode']) && $_REQUEST['mode']=='add_product'){
     include("product_form_add.php");
   }elseif(isset($_REQUEST['mode']) && $_REQUEST['mode']=='edit_product'){
-    include("product_form_edit.php");
+    include("product_edit.php");
   }elseif(isset($_REQUEST['mode']) && $_REQUEST['mode']=='del_product'){
     include("product_form_del.php");
   }else {

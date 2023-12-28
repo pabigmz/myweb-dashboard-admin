@@ -1,11 +1,25 @@
 <?php
 include("connect/connect.php");
+
+$id = $_REQUEST['id'];
+
+$sql = "SELECT * FROM `product` WHERE product_id = $id";
+$query = mysqli_query($conn, $sql);
+
+$row = mysqli_fetch_array($query);
+
+$product_id = $row['product_id'];
+$product_name = $row['product_name'];
+$product_cost = $row['product_cost'];
+$product_price = $row['product_price'];
+$product_amount = $row['product_amount'];
+
+
+
 ?>
 
-<body>
-  
-
-<!-- Content Wrapper. Contains page content -->
+<!-- <body>
+Content Wrapper. Contains page content -->
 
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
@@ -30,7 +44,7 @@ include("connect/connect.php");
 <section class="content">
 <div class="card">
       <div class="card-header">
-        <h3 class="card-title">เพิ่มสินค้า</h3>
+        <h3 class="card-title">แก้ไขสินค้า</h3>
       </div>
       <!-- /.card-header -->
       <div class="card-body">
@@ -40,7 +54,7 @@ include("connect/connect.php");
             <div class="bs-stepper-content">
               <!-- your steps content here -->
               <div id="logins-part" class="content" role="tabpanel" aria-labelledby="logins-part-trigger">
-                <form action="product_form_add_db.php" method="POST" enctype="multipart/form-data">
+                <form action="product_form_edit_db.php" method="POST" enctype="multipart/form-data">
                   <div class="form-group">
                         <label for="exampleInputEmail1">หมวดหมู่สินค้า</label>
                         <?php 
@@ -57,21 +71,22 @@ include("connect/connect.php");
 
                         </select>
                   </div>
+                  <input type="hidden" name="product_id" id="product_id" value="<?php echo $product_id; ?>" >
                   <div class="form-group">
                         <label for="exampleInputEmail1">ชื่อสินค้า</label>
-                        <input type="text" name="product_name" id="product_name" class="form-control">
+                        <input type="text" name="product_name" id="product_name" class="form-control" value="<?php echo $product_name; ?>">
                   </div>
                   <div class="form-group">
                         <label for="exampleInputEmail1">ราคาทุน</label>
-                        <input type="text" name="product_cost" id="product_cost" class="form-control">
+                        <input type="text" name="product_cost" id="product_cost" class="form-control" value="<?php echo $product_cost; ?>">
                   </div>
                   <div class="form-group">
                         <label for="exampleInputEmail1">ราคาขาย</label>
-                        <input type="text" name="product_price" id="product_price" class="form-control">
+                        <input type="text" name="product_price" id="product_price" class="form-control" value="<?php echo $product_price; ?>">
                   </div>
                   <div class="form-group">
                         <label for="exampleInputEmail1">คงเหลือ</label>
-                        <input type="text" name="product_amount" id="product_amount" class="form-control">
+                        <input type="text" name="product_amount" id="product_amount" class="form-control" value="<?php echo $product_amount; ?>">
                   </div>
                   <div class="form-group">
                         <label for="exampleInputEmail1">รูปภาพ (ขนาด 50 x 50)</label>
@@ -124,3 +139,5 @@ include("connect/connect.php");
 
 </body>
 </html>
+  
+

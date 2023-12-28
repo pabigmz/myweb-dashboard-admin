@@ -76,13 +76,13 @@
                     echo "          <td>".$row['product_price']."</td>";
                     echo "          <td>".$row['product_amount']."</td>";
                     // echo "          <td>".$row['product_image']."</td>";
-                    echo "          <td><img src='images/".$row['product_image']."' width='50px' height='50px'></td>";
+                    echo "          <td><img src='image/".$row['product_image']."' width='50px' height='50px'></td>";
                     echo "          <td>"; 
-                    echo '              <a href="product_type.php?mode=edit_product&id='.$row['product_type_id'].'" class="btn btn-warning" role="button">EDIT</a>';?>
+                    echo '              <a href="product.php?mode=edit_product&id='.$row['product_id'].'" class="btn btn-warning" role="button">EDIT</a>';?>
                                     </td>
                                     <td>
                                     <?php
-                                        echo  "<a href='product_type_form_del.php?id=$row[product_type_id]' class='btn btn-danger' role='button' onclick=\"return confirm('คุณต้องการลบใช่หรือไม่')\">DELETE</a>";?>
+                                        echo  "<a href='product_form_del.php?id=$row[product_id]' class='btn btn-danger' role='button' onclick=\"return confirm('คุณต้องการลบใช่หรือไม่')\">DELETE</a>";?>
                                     </td>
                                 </tr><?php } ?>
                             </tbody>
